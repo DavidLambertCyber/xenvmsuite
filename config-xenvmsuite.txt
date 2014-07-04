@@ -1,0 +1,51 @@
+#------------------------------------------------------------
+# One config parameter per line
+# Each parameter must start begining of new line
+# No space after equals
+# leave commented examples
+#-----------------------------------------------------------
+
+#
+# list of VMs to backup, can be more than one
+# used by dobuxenvm.sh
+#
+#UUID-TO-BU=9e053915-f501-2f50-f5db-a198f2491de8
+
+#UUID-TO-BU=163fa95b-d246-feb4-2ad5-c909d3b5af35
+#UUID-TO-BU=20b5e0f4-f092-a946-3300-006ada5e5405
+#UUID-TO-BU=6fb405df-20c0-4eb4-4fcc-3cf5188c3d07
+UUID-TO-BU=2db9dc5f-401a-d10f-55b5-2ee7e4505c9d
+
+
+#
+# single directory to store all backups, with trailing slash
+# used by dobuxenvm.sh
+# 
+#EXPORT-DIR=/var/run/sr-mount/7d7cb490-21dd-2c6e-127b-b993ddd52ca4/
+
+EXPORT-DIR=/mnt/xenshare/vmbackups/rockport/
+
+#
+# number of backups limit for each vm, the oldest vm will be deleted
+# used by dobuxenvm.sh
+#
+#BU-LIMIT=10
+
+BU-LIMIT=31
+
+#
+# log file, extension added later (ie. dobuxenvm.log)
+# used by dobuxenvm.sh
+#
+#LOGFILE=/var/log/xenvmsuite
+
+LOGFILE=/var/log/xenvmsuite
+
+#
+# date command to name the gzip log files, and backup files
+# used by: dobuxenvm.sh, buxenvm.sh
+#
+#DATE-CMD=date +"%F-at-%H-%M"
+
+DATE-CMD=date +"%F-at-%H-%M"
+
